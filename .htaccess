@@ -1,0 +1,12 @@
+# Redirect HTTPS to HTTP
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+Redirect 301 /explorer http://explorer.ninjacoin.org
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [R=301,QSA,NC,L]
+
+Header set Access-Control-Allow-Origin "*"
+Header add Access-Control-Allow-Headers "Content-Type, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since, X-File-Name, Cache-Control"
+Header add Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+Header add Access-Control-Allow-Credentials "true" 
