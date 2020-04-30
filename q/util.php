@@ -2,7 +2,7 @@
 
 function build_post_context(string $postdata) {
         return stream_context_create(array(
-                'http' =>
+                'https' =>
                         array(
                                 'method' => 'POST',
                                 'header' => 'application/json',
@@ -25,7 +25,7 @@ function fetch_rpc(string $api, string $method, string $params) {
 };
 
 function fetch_getinfo(string $api) {
-        $_url = $api . '/getinfo';
+        $_url = $api . '/info';
         $response = file_get_contents($_url);
         return json_decode($response, true);
 };

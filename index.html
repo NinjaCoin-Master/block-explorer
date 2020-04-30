@@ -1,22 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="icon" type="image/icon" href="favicon.ico" >
-    <title>[NINJA] NinjaCoin Block Explorer</title>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.0/jquery.timeago.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <link href="css/themes/ninja/style.css" rel="stylesheet" id="theme_link">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="./config.js"></script>
-    <script src="js/main.js"></script>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139152446-1"></script>
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139152446-1"></script>
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139152446-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -24,6 +12,24 @@
 
   gtag('config', 'UA-139152446-1');
 </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="shortcut icon" href="favicon.ico">
+	    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <title>[NINJA] NinjaCoin Block Explorer</title>
+<meta name="description" content="NinjaCoin Blockchain Explorer and Mining Pools Stats">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.0/jquery.timeago.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/fontawesome-all.min.css">
+    <link href="css/themes/ninja/style.css" rel="stylesheet" id="theme_link">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="./config.js"></script>
+    <script src="js/main.js"></script>
+
 
 </head>
 <body>
@@ -37,7 +43,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand " href="#"><img src="img/icon_light.png"> <strong>NINJA</strong>COIN</a>
+            <a class="navbar-brand " href="https://ninjacoin.org/"><img src="img/icon_light.png"> <strong>NINJA</strong>COIN</a>
 			<div id="stats_updated"><i class="fa fa-bolt"></i></div>
         </div>
 		
@@ -237,6 +243,7 @@ $('#txt_search').keyup(function(e){
 });
 </script>
 
+
 <div id="content">
 	<div class="container">
 
@@ -247,42 +254,44 @@ $('#txt_search').keyup(function(e){
 	</div>
 </div>
 
+
 <footer>
-	<div class="container">
-                <div class="row">
-			<div class="col-lg-12 col-md-4 col-sm-4 text-center" id="donations" style="word-wrap:break-word; display:none;">
-                        Donations welcome:<br/>
-                        <span id="donationAddress"></span><br/><br/>
-			</div>
-                </div>
-		<div class="row">
-			<div class="col-lg-4 col-md-3 col-sm-3 text-center">
-				<p>
-					<small>
-						&copy; 2019 <strong>NINJACOIN.ORG</strong> 
-					</small>
-				</p>
-			</div>
-			<div class="col-lg-4 col-md-3 col-sm-6 text-center">
-				<p>
-					<small>
-					<!-- This copyright should be left intact -->
+<center>
+	<div class="container"></div>
+		
+		<!--	<span class="copyright-text">					
+					<a href="https://www.ninjacoin.org" target="_blank"><img class="logo logo-light" alt="logo" src="explorer/img/logo_foot.png"></a>
+			</span>  -->
+			<div class="col-md-20">
+				<span class="social" style="font-size:25px">
+					<a href="https://discord.ninjacoin.org" target="_blank"><i class="fab fa-discord"></i></a>
+					<a href="https://telegram.ninjacoin.org" target="_blank"><i class="fab fa-telegram"></i></a>
+					<a href="https://twitter.ninjacoin.org" target="_blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://facebook.ninjacoin.org" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://github.ninjacoin.org" target="_blank"><i class="fab fa-github"></i></a>
+					<a href="https://bitcointalk.ninjacoin.org" target="_blank"><i class="fab fa-bitcoin"></i></a>
+					<a href="https://youtube.ninjacoin.org" target="_blank"><i class="fab fa-youtube"></i></a>
+				</span>
 				
-					Powered by <a target="_blank" href="https://github.com/ninjacoin-master/block-explorer"><i class="fa fa-github"></i> Ninja Blockchain Explorer</a> v. 1.0.0.<br />
-					<span class="text-muted">Code from <strong>Karbowanec Blockchain Explorer</strong><br />
-					<span class="text-muted">Partially based on <strong>cryptonote-universal-pool</strong><br />
-					open sourced under the <a href="http://www.gnu.org/licenses/gpl-2.0.html">GPL</a></span>
-					</small>
-				</p>
-			</div>
-			<div class="col-lg-4 col-md-3 col-sm-3 text-center">
-                                <ul class="list-unstyled">
-				        <li><a href="http://ninjacoin.org/">NINJACOIN.ORG</a></li>
-                               </ul>
-			</div>
+			
 		</div>
-    </div>
+	</div>
+</center>
+<br>
+<center>
+<script async src="https://static.coinstats.app/widgets/coin-price-widget.js"></script>
+<coin-stats-ticker-widget coin-id="ninjacoin" locale="en" currency="USD" rank-background="#FFA959" background="#1C1B1B" status-up-color="#74D492" status-down-color="#FE4747" rank-text-color="#1C1B1B" text-color="#FFFFFF" border-color="rgba(255,255,255,0.15)" type="medium" width="350"></coin-stats-ticker-widget>
+
+</center>
+
+
+
 </footer>
+
+
+
+
+
 <a href="#" class="scrollup"><i class="fa fa-chevron-circle-up"></i></a>
 	<script type="text/javascript">
 			jQuery(function($) { $(document).ready(function() {

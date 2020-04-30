@@ -341,7 +341,7 @@ function calcAvgHashRate(){
 
     updateText('avgDifficulty', getReadableDifficultyString(avgDiff, 0).toString());
     updateText('avgHashrate', getReadableHashRateString(avgDiff / blockTargetInterval));
-    //updateText('blockSolveTime', getReadableTime(lastStats.difficulty / avgHashRate));
+    updateText('blockSolveTime', getReadableTime(lastStats.difficulty / avgHashRate));
 }
 
 function renderLastBlock(){
